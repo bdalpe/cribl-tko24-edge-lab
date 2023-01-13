@@ -1,0 +1,15 @@
+env:
+  CRIBL_DIST_MASTER_URL: tcp://criblmaster@0.0.0.0:4200
+  CRIBL_DIST_MODE: master
+service:
+  externalType: NodePort
+  ports:
+  - name: api
+    port: 9000
+    protocol: TCP
+    external: true
+    nodePort: 30000
+  - name: rpc
+    port: 4200
+    protocol: TCP
+    external: false

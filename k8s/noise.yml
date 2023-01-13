@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: noise
+spec:
+  containers:
+    - name: noise
+      image: kscarlett/nginx-log-generator
+      env:
+        - name: RATE
+          value: "3"

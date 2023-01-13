@@ -1,0 +1,9 @@
+config:
+  host: leader-internal
+  group: default
+  token: criblmaster
+service:
+  type: ClusterIP
+autoscaling:
+  enabled: false
+replicaCount: 2
