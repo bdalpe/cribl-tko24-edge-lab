@@ -1,3 +1,6 @@
+image:
+  pullPolicy: IfNotPresent
+  tag: latest
 cribl:
   leader: tcp://criblmaster@leader-internal:4200
 extraEnv:

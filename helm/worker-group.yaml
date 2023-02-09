@@ -1,3 +1,6 @@
+criblImage:
+  pullPolicy: IfNotPresent
+  tag: latest
 config:
   host: leader-internal
   group: default
